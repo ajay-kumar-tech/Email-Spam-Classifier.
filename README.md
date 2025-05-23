@@ -5,8 +5,28 @@ This project builds an **Email Spam Classifier** using Neural Network-based vect
 ---
 
 ## 📖 Project Overview
-
-Email spam filtering is essential to protect users from unwanted and potentially harmful emails. This project leverages advanced text representation techniques using Neural Network-based embeddings (NNP) combined with a classic Naïve Bayes classifier to detect spam emails effectively. The model classifies incoming emails as either **SPAM** or **HAM** (non-spam).
+```
+Email-Spam-Classifier/
+│
+├── data/ # Raw and preprocessed dataset (spam/ham emails)
+│ ├── spam.csv
+│ └── ham.csv
+│
+├── notebooks/ # Jupyter notebooks for EDA, model training and testing
+│ └── Email_Spam_Model.ipynb
+│
+├── model/ # Saved trained model files (.pkl or .h5)
+│ └── spam_classifier.pkl
+│
+├── vectorizer/ # Saved vectorizer (NNP or TF-IDF)
+│ └── vectorizer.pkl
+│
+├── train_model.py # Script for preprocessing and model training
+├── predict.py # Script to test model on new email text
+├── app.py # Streamlit/Flask app for web deployment
+├── requirements.txt # Required Python libraries
+└── README.md # Project documentation
+```
 
 ---
 
@@ -23,7 +43,6 @@ Email spam filtering is essential to protect users from unwanted and potentially
 
 ## 📷 Sample Output
 
-```vbnet
 Input: "You have won a lottery worth $10,000! Click now to claim."
 Prediction: SPAM ✅
 
